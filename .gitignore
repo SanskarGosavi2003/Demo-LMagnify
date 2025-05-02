@@ -1,0 +1,17 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Results files (optional, but good practice if they contain sensitive info or are large)
+# google_results.json
+# bing_results.json
+# *.html

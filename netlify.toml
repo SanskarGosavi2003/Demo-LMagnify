@@ -1,0 +1,12 @@
+[build]
+  base = "/"
+  publish = "/"
+  command = "echo 'Static site deployment'"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/sipwise.html"
+  status = 200
