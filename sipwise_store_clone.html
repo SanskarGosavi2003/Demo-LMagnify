@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipwise - Smart Hydration Technology</title>
+    <style>
+        :root {
+            --primary-color: #2196F3;
+            --secondary-color: #424242;
+            --text-color: #333333;
+            --light-gray: #f5f5f5;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .header {
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero {
+            padding: 8rem 5% 4rem;
+            background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: var(--secondary-color);
+        }
+
+        .products {
+            padding: 4rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card h3 {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .product-card p {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #1976D2;
+        }
+
+        .features {
+            padding: 4rem 5%;
+            background-color: var(--light-gray);
+            text-align: center;
+        }
+
+        .feature-item {
+            margin-bottom: 2rem;
+        }
+
+        .footer {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Sipwise</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <section class="hero" id="home">
+        <h1>Smart Hydration, Simplified</h1>
+        <p>Transform your hydration habits with our intelligent water bottles and premium drinkware</p>
+        <a href="#products" class="cta-button">Shop Now</a>
+    </section>
+
+    <section class="products" id="products">
+        <div class="product-card">
+            <h3>Sipwise PRO</h3>
+            <p>Smart Water Bottle with AI-powered hydration tracking</p>
+            <ul>
+                <li>Automatic water intake tracking</li>
+                <li>Multi-sensory reminders</li>
+                <li>Companion mobile app</li>
+                <li>30-day battery life</li>
+            </ul>
+        </div>
+
+        <div class="product-card">
+            <h3>Classic Tumbler</h3>
+            <p>Premium insulated drinkware for everyday use</p>
+            <ul>
+                <li>40oz capacity</li>
+                <li>24-hour cold retention</li>
+                <li>BPA-free materials</li>
+                <li>Dishwasher safe</li>
+            </ul>
+        </div>
+
+        <div class="product-card">
+            <h3>Smart Cap</h3>
+            <p>Transform any bottle into a smart hydration companion</p>
+            <ul>
+                <li>Easy to install</li>
+                <li>Bluetooth connectivity</li>
+                <li>Water-resistant</li>
+                <li>Long battery life</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Why Choose Sipwise?</h2>
+        <div class="feature-item">
+            <h3>Smart Technology</h3>
+            <p>Our bottles use advanced sensors and AI to track your hydration automatically</p>
+        </div>
+        <div class="feature-item">
+            <h3>Premium Quality</h3>
+            <p>Constructed with high-grade stainless steel and BPA-free materials</p>
+        </div>
+        <div class="feature-item">
+            <h3>Sustainability</h3>
+            <p>Reduce plastic waste with our durable, reusable drinkware</p>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <p>&copy; 2025 Sipwise. All rights reserved.</p>
+        <div>
+            <a href="#" style="color: var(--white);">Privacy Policy</a> |
+            <a href="#" style="color: var(--white);">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>
